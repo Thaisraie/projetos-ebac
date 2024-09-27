@@ -1,0 +1,45 @@
+body {
+    background-image: url(./images/background.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.accordion {
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.accordion-header {
+    color: #fff;    
+}
+
+.accordion-button:not(.collapsed) {
+    color: #fff;
+}
+
+.accordion-button {
+    color: #fff;
+    font-weight: bold;
+    background-image: url(./images/background.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.form-check {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.btn-success {
+    background-image: url(./images/background.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    margin-left: 90px;
+    width: 50%;
+    padding: 1px;
+    border-radius: 50px;
+    border: none;
+}
+

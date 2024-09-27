@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desenvolva navbar</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+</head>
+<body>
+    <header>
+        <div class="navbar"> <!-- usando a classe navbar o h1 fica na esquerda e o nav na direita  -->
+            <div class="container">
+                <h1>Título do Site</h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu"> <!-- informar os atributos data-bs-toggle="collapse" data-bs-target="#menu" elemento alvo que será afetado  -->
+                    <span class="navbar-toggler-icon"></span> <!-- a classe: "navbar-toggler-icon" cria o menu hamburguer -->
+                </button>
+                <nav class="collapse navbar-collapse" id="menu"> <!-- a classe "collapse navbar-collapse" oculta a li precisa atribuir um id para dar funcionalidade ao botão -->
+                    <ul class="nav nav-pills"> <!-- classe "nav" itens ficam um ao lado do outro e o bullet foi removidos a classe "nav-pills" aplicar espaçamento -->
+                        <li class="nav-item"> <!-- aplicar a classe "nav-item" e "nav-link" para aplicar espalamento -->
+                            <a class="nav-link active" href="#">Ínicio</a> <!-- a classe "active" Indica quais itens do menu está ativo ex: site com várias páginas -->
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#">Produtos</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#">Promoções</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <script src="./lib/bootstrap.bundle.min.js" ></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Define duas colunas com larguras iguais */
+    gap: 20px; /* Espaço entre as colunas (opcional) */
+    background-color: aqua;
+  }
+  
+  .box1, .box2 {
+    padding: 20px;
+    background-color: lightblue;
+    text-align: center;
+  }

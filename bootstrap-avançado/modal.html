@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desenvolvendo modal</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+</head>
+<body>
+    <button class="btn btn-success"  data-bs-toggle="modal" data-bs-target="#exemplo-modal"> <!-- por padrão o modal não é aberto necessário adicionar os parâmetros: atributos (data-bs-toggle="modal") e (data-bs-target="#exemplo-modal") informar o id do elemento que será aberto ao clicar. -->
+        Abrir modal
+    </button>
+    <div  class="modal" id="exemplo-modal" data-bs-backdrop="static"> <!-- atributo (data-bs-backdrop="static") remove a opção de fechar o modal ao clicar no fundo. -->
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Título da modal</h5> 
+                    <button data-bs-dismiss="modal" type="button" class="btn-close"></button> <!-- atributo (data-bs-dismiss="modal") para aplicar função de fechar o modal              -->
+                </div>
+                <div  class="modal-body">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure obcaecati fugit soluta, officiis ratione laudantium qui at magnam voluptatum. Velit quas dolores, expedita aliquid neque facere in vel nam unde.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button  type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                    <button  type="button" class="btn btn-success" data-bs-dismiss="modal">Confirmar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+    <script> // o evento: "addEventListener('DOMContentLoaded')" quando todo conteúdo for carregado ele irá executar o código JS. //
+        document.addEventListener('DOMContentLoaded', function() { // utilizar o callback "function()" //
+            const modalExemplo = new bootstrap.Modal('#exemplo-modal');
+            setTimeout(function() { // adicionando um delay //
+                modalExemplo.show(); // chamar a modal //
+            }, 3000); // milisegundos de espera para executar a função //
+        })
+    </script>
+</body>
+</html>

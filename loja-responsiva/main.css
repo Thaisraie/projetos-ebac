@@ -1,0 +1,314 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior:smooth;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.089);
+}
+
+header, footer {
+    background-color: black;
+    color: #F2F5EA;
+    padding-top: 19px;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.menu-hamburguer {
+    width: 40px;
+    cursor: pointer;
+}
+
+.menu-hamburguer span {
+    height: 2px;
+    width: 100%;
+    margin-left: 20px;
+    background-color: #fff;
+    display: block;
+    margin-bottom: 6px;
+}
+
+nav li {
+    list-style: none;
+    display: inline;
+    margin-right: 16px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav li a {
+    color: black;
+    text-decoration: none;
+}
+
+header > .container,
+footer > .container {
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+.title {
+    text-align: center;
+    padding-bottom: 50px;
+    font-size: 18px;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.menu {
+    background-color: #FFE2D1;
+    padding: 15px 0;
+    display: none;
+}
+
+.sublinhado > li {
+    border-bottom: 2px solid transparent;
+}
+
+.sublinhado li:hover {
+    border-color: black;
+}
+
+.container-flex {
+    display: flex;
+}
+
+#sobre-a-loja img {
+    max-width: 350px;
+    margin-right: 24px;
+}
+
+section {
+    padding: 48px 0;
+}
+
+.container > span {
+    height: 2px;
+    width: 89%;
+    background-color: #000000;
+    display: block;
+    margin-bottom: 40px;
+}
+
+.sobre > span {
+    height: 2px;
+    width: 100%;
+    background-color: #000000;
+    display: block;
+    margin-bottom: 40px;
+}
+
+section h2 {
+    margin-bottom: 20px;
+}
+
+.lista-bolsas {
+    flex-wrap: wrap;
+}
+
+.lista-bolsas li {
+    list-style: none;
+    max-width: 20%;
+}
+
+.lista-bolsas li img {
+    max-width: 100%;
+}
+
+.lista-bolsas li h3 {
+    margin: 15px 0;
+}
+
+.lista-bolsas li h3 {
+    margin: 15px 0;
+}
+
+.lista-bolsas button {
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+
+.item-central {
+    margin: 0 3%;
+}
+
+.bag-centraliza {
+    margin-right: 3%;
+}
+
+.bag-direita > button {
+    margin-top: 52px;
+}
+
+.bag-preta > button {
+    margin-top: 12px;
+    margin-bottom: 0px;
+}
+
+li > img {
+    width: 203px;
+    height: 159.16px;
+}
+
+form button {
+    color: black;
+    background-color: #FFE2D1;
+    border-radius: 5px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    background-color: black;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.form-campo {
+    margin-bottom: 16px;
+}
+
+.form-campo label {
+    display: block;    
+}
+
+.form-campo input,
+.form-campo textarea {
+    width: 100%;
+    display: block;
+    padding: 7px;
+}
+
+.form-campo textarea {
+    resize: none;
+    height: 120px;
+}
+
+form {
+    max-width: 360px;
+}
+
+form button {
+    max-width: 120px;
+}
+
+footer li {
+    list-style: none;
+    margin-left: 16px;
+}
+
+footer li img {
+    height: 32px;
+}
+
+/* @media (max-width: 640px) {
+    nav li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .container-flex {
+        flex-direction: column;
+    }
+
+    #sobre-a-loja img {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .lista-bolsas li {
+        max-width: 100%;
+    }
+
+    form {
+        max-width: 100%;
+    }
+} */
+
+@media (max-width: 1023px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sobre p {
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+
+    .sobre h2 {
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .sobre > span {
+        height: 2px;
+        width: 50%;
+        background-color: #000000;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+
+    .container > span {
+        height: 2px;
+        width: 70%;
+        background-color: #000000;
+        display: block;
+        margin-bottom: 40px;
+        margin-left: 15%;
+    }
+
+    .container h2 {
+        text-align: center;
+    }
+
+    .box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .box1 {
+        background-color: aqua;
+  
+    }
+
+    .box2 {
+        background-color: blueviolet;
+        padding: 20px;
+    }
+
+
+    form {
+        max-width: 80%;
+    }
+
+    .imagem-loja {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+
+
