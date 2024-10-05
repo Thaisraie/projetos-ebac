@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal Bootstrap</title>
+    <link rel="stylesheet" href="../lib/bootstrap.min.css">
+</head>
+<body>
+
+    <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exemplo-modal">
+        Abrir modal
+    </button>
+    
+    <div class="modal" id="exemplo-modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Título da Modal</h5>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto accusantium voluptas maxime nisi tempora! Eveniet earum labore fugiat, dolore ex dignissimos quos minus nobis eligendi et, officiis beatae. Fugit, facilis?</p>
+                </div>
+                <div class="modal-footer">
+                    <h5>Rodapé da modal</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exemplo-modal1">
+        Abrir modal
+    </button>
+
+    <div class="modal" id="exemplo-modal1" data-bs-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto accusantium voluptas maxime nisi tempora! Eveniet earum labore fugiat, dolore ex dignissimos quos minus nobis eligendi et, officiis beatae. Fugit, facilis?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <button class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#exemplo-modal2">
+        Abrir modal
+    </button>
+
+    <div class="modal" id="exemplo-modal2" data-bs-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button data-bs-dismiss="modal" type="button" class="btn-close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto accusantium voluptas maxime nisi tempora! Eveniet earum labore fugiat, dolore ex dignissimos quos minus nobis eligendi et, officiis beatae. Fugit, facilis?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exemplo-modal3">
+        Abrir modal
+    </button>
+
+    <div class="modal" id="exemplo-modal3" data-bs-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto accusantium voluptas maxime nisi tempora! Eveniet earum labore fugiat, dolore ex dignissimos quos minus nobis eligendi et, officiis beatae. Fugit, facilis?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-success" data-bs-dismiss="modal">Confirmar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../lib/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const modalExemplo = new bootstrap.Modal('#exemplo-modal');
+            setTimeout(function() {
+                modalExemplo.show();
+            }, 3000);
+        })
+    </script>
+</body>
+</html>
