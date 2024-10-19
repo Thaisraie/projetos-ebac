@@ -1,0 +1,110 @@
+body {
+    background-color: #343434;
+}
+
+.navbar {
+    background-color: #343434;
+    color: #F7FFF7;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav-pills .nav-link.active {
+    background-color: #FFE66D;
+    color: #2F3061;
+}
+
+.nav-link {
+    color: #FFE66D;
+}
+
+.nav-link:hover {
+    color: #F7FFF7;
+}
+
+.carousel-inner {
+    height: 500px;
+}
+
+.carousel-item {
+    height: 100%
+}
+
+h2 {
+    color: #F7FFF7;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 42px;
+}
+
+.secao {
+    margin-top: 100px;
+    height: 100vh;
+}
+
+.card {
+    background-color: #F7FFF7;
+}
+
+.btn-primary {
+    background-color: #6CA6C1;
+    border-color: #6CA6C1;
+}
+
+.btn-primary:hover {
+    background-color: #FFE66D;
+    border-color: #FFE66D;
+    color: black;
+}
+
+.modal-content {
+    background-color: #343434c2;
+    color: #FFE66D;
+}
+
+.accordion {
+    margin-top: 100px;
+}
+
+#contato {
+    margin-top: 100px;
+}
+
+label {
+    color: #F7FFF7;
+}
+
+#inicio,
+#series,
+#duvidas,
+#contato {
+    height: 100vh;
+}
+
+.accordion-item {
+    background-color: #F7FFF7;
+    margin-bottom: 10px;
+}
+
+.accordion-button {
+    background-color:#343434c2;
+    color: #F7FFF7;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color:#2F3061;
+    color: #F7FFF7;
+}
+
+.btn-light {
+    margin-top: 30px;
+    background-color: #FFE66D;
+}
+
+.btn-light:hover {
+    background-color:#2F3061;
+    color: #F7FFF7;
+}
